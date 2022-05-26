@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-navtexto: #fff;
+    --color-texto: rgb(0, 0, 0);
+    --color-navfoo: #6264e0;
+}
+
+body{
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-digital-azul-copia-espacio_23-2148821698.jpg?t=st=1653581587~exp=1653582187~hmac=4a794ad3bc175fbeab45516487c764e59c81a038d09ce466204b3b510cc66be5&w=740);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.headerprin{
+    width: 100%;
+
+}
+
+.navprin{
+    padding: 1rem;
+    background-color: var(--color-navfoo);
+
+}
+
+.navprin ul{
+   list-style: none;
+   text-align: center;
+   margin: auto;
+}
+
+.navprin li{
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    margin: 0 0 0 0.5rem;
+    text-decoration: none;
+}
+
+
+.navprin li a{
+    color: var(--color-texto);
+    text-decoration: none;
+    color: var(--color-navtexto);
+}
+
+.navprin li a:hover{
+    color: var(--color-texto);
+    text-decoration: none;
+    color: var(--color-navtexto);
+    font-size: 18px;
+}
+
+
+#usuario{
+    float: right;
+    font-size: 15px;
+    
+
+}
+
+ #desplegar{
+    
+    font-family: 'Courier New', Courier, monospace;
+    display: none;
+    
+    
+}
+
+.navprin .material-symbols-outlined{
+    
+    color: #fff;
+    font-size: 40px;
+    transition: all 500ms ease-out;
+  
+}
+
+#desplegar:target{
+  display: flex;
+  position: absolute;
+  height: 120px;
+}
+
+
+
+.row{
+    width: 100%;
+}
+
+.row .col-md-3{
+
+    color: var(--color-navtexto);
+   padding: 20px;
+    
+}
+
+.row .titulo{
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    font-size: 23px;
+
+}
+
+.contenido{
+    position: absolute;
+    width: 250px;
+    text-align: center;
+    margin: auto 20px;
+    transition: all 500ms ease-out;
+    opacity: 0;
+    color: var(--color-texto);
+    padding: 10px;
+    
+}
+
+.col-md-3 img{
+    
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+    transition: all 500ms ease-out;
+  
+}
+
+
+.row .contenido:hover{
+    opacity: 2;
+   
+}
+
+.footer{
+    background-color: var(--color-navfoo);
+    height: auto;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    color: var(--color-navtexto);
+}
